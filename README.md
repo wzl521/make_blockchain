@@ -1,0 +1,2 @@
+# make_blockchain
+使用go语言从0开始构建一个简易的区块链
