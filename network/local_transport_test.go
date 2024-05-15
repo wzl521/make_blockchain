@@ -12,6 +12,7 @@ func TestLocalTransport_Connect(t *testing.T) {
 	tra.Connect(trb)
 	trb.Connect(tra)
 
+	assert.Equal(t, tra.peers[trb.addr], trb)
 	assert.Equal(t, trb.peers[trb.addr], tra)
 }
 func TestLocalTransport_SendMessage(t *testing.T) {
